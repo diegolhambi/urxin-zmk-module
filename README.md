@@ -1,11 +1,27 @@
-# ZMK Module Template
+# Urxin ZMK Module
 
-This repository contains a template for a ZMK module, as it would most frequently be used. 
+This repository contains the shield files for the [Urxin](https://github.com/diegolhambi/urxin).
 
 ## Usage
 
-Read through the **ZMK Module Creation** page for details on how to configure this template.
+Edit your west.yml file found in your zmk-config's config directory following the example below.
 
-## More Info
+```yaml
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: diegolhambi
+      url-base: https://github.com/diegolhambi/zmk-keyboard-urxin
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-keyboard-urxin
+      remote: diegolhambi
+      revision: main
+  self:
+    path: config
 
-For more info on modules, you can read through  through the [Zephyr modules page]() and [ZMK's page on using modules](). [Zephyr's west manifest page]() may also be of use.
+```
