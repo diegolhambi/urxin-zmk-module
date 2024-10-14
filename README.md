@@ -12,7 +12,7 @@ manifest:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
     - name: diegolhambi
-      url-base: https://github.com/diegolhambi/zmk-keyboard-urxin
+      url-base: https://github.com/diegolhambi
   projects:
     - name: zmk
       remote: zmkfirmware
