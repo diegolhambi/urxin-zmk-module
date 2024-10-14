@@ -1,0 +1,11 @@
+file_format: '1'
+id: urxin
+name: Urxin
+type: shield
+url: https://github.com/diegolhambi/zmk-keyboard-urxin
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - urxin_left
+  - urxin_right

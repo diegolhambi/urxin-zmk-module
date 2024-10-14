@@ -1,0 +1,16 @@
+if SHIELD_URXIN_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Urxin"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_URXIN_LEFT || SHIELD_URXIN_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
